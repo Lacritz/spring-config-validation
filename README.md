@@ -5,8 +5,9 @@ and exposing the configuration properties via REST.
 ## Installation
 
 ## How to Use
- 
-Configuration IDs are accessible using `GET /rest/v1/config`.  
+
+### Access Configuration 
+*Configuration IDs* are accessible using `GET /rest/v1/config`.  
 _Example:_ 
 ```json
 [
@@ -16,7 +17,7 @@ _Example:_
 ]
 ```
 
-Configurations are accessible using `GET /rest/v1/config/{id}`  
+*Configurations* are accessible using `GET /rest/v1/config/{id}`  
 _Example:_
 ```json
 {
@@ -39,8 +40,9 @@ _Example:_
 }
 ```
 
-Validation for a specific configuration can be triggered using `POST /rest/v1/config/{id}/validate`.  
-The property snippet must be sent as part of the body.  
+### Validation
+*Validation* for a specific configuration can be triggered using `POST /rest/v1/config/{id}/validate`.  
+The properties must be sent as part of the body.  
 _Example (*.json):_
 ```json
 [
